@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2 part-2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Pattern</h1>
-        <div id="pattern_first">
-            <div>
-                <label for="star">Enter range:</label>
-                <input type="number" id="star" name="star">
+        <div class="wrapper">
+            <div id="pattern_first" class="f-group">
+                <div>
+                    <label for="star">Enter range:</label>
+                    <input type="number" id="star" name="star">
+                </div>
+                <button type="submit" onclick="generate_star()">Submit</button>
+                <button type="submit" onclick="reset_star()">Reset</button>
+                <div id="ans"></div>
             </div>
-            <button type="submit" onclick="generate_star()">Submit</button>
-            <button type="submit" onclick="reset_star()">Reset</button>
-            <div id="ans"></div>
-        </div>
-        <div id="pattern_second">
-            <div>
-                <label for="number">Enter range:</label>
-                <input type="number" id="number" name="number">
+            <div id="pattern_second" class="f-group">
+                <div>
+                    <label for="number">Enter range:</label>
+                    <input type="number" id="number" name="number">
+                </div>
+                <button type="submit" onclick="generate_number()">Submit</button>
+                <button type="submit" onclick="reset()">Reset</button>
+                <div id="ans_number"></div>
             </div>
-            <button type="submit" onclick="generate_number()">Submit</button>
-            <button type="submit" onclick="reset()">Reset</button>
-            <div id="ans_number"></div>
         </div>
     </div>
     <script src="/pattern/assets/js/script.js"></script>

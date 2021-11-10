@@ -51,7 +51,7 @@ function generate_number(){
     else if(isNaN(number)){
         alert("Please Enter value");
     }
-    else if(number> 30){
+    else if(number> 25){
         alert("Not valid")
     }
     else{
@@ -60,7 +60,7 @@ function generate_number(){
             for(var j=1; j<i; j++){
                 n += i*j + '&nbsp &nbsp';
             }
-            n += `<br>`
+            n += `<br> <br>`
             // string += ``
         }
         //console.log(s);
