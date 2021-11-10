@@ -24,7 +24,7 @@ function table(){
     }
 }
 function reset(){
-    document.getElementById("reset").value="";
+    document.getElementById("number").value="";
     document.getElementById("range").value="";
     document.getElementById("table").innerHTML="";
 
