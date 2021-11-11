@@ -1,7 +1,7 @@
 function table(){
     //console.log("he")
-    var number = parseInt(document.getElementById("number").value);
-    var range = parseInt(document.getElementById("range").value);
+    let number = parseInt(document.getElementById("number").value);
+    let range = parseInt(document.getElementById("range").value);
    
     if(number==0 || range==0){
         alert("Not valid");
@@ -16,8 +16,8 @@ function table(){
     }
     else{
         let s ;
-        for (var i=1; i<= range; i++){
-            var table = number*i;
+        for (let i=1; i<= range; i++){
+            let table = number*i;
             //console.log(table);
             document.getElementById("table").innerHTML+=`<h4> ${number} * ${i} = ${table}</h4>`;           
         }        

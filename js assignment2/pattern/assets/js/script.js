@@ -1,7 +1,7 @@
 console.log("working");
 function generate_star(){
     //console.log("hello");
-    var star = parseInt(document.getElementById("star").value);
+    let star = parseInt(document.getElementById("star").value);
     //console.log(star)
     if(star==0){
         alert("0 Not allow");
@@ -19,8 +19,8 @@ function generate_star(){
     }
     else{
         let s= "";
-        for(var i =1; i<=star; i++){
-            for(var j=0; j<i; j++){
+        for(let i =1; i<=star; i++){
+            for(let j=0; j<i; j++){
                 s+= "*"
             }
             s+= `<br>`
@@ -38,7 +38,7 @@ function reset_star(){
 }
 function generate_number(){
     //console.log("hello");
-    var number = parseInt(document.getElementById("number").value);
+    let number = parseInt(document.getElementById("number").value);
     //console.log(star)
     if(number==0){
         alert("0 Not allow");
@@ -56,8 +56,8 @@ function generate_number(){
     }
     else{
         let n = "";
-        for(var i =1; i<=number; i++){
-            for(var j=1; j<i; j++){
+        for(let i =1; i<=number; i++){
+            for(let j=1; j<i; j++){
                 n += i*j + '&nbsp &nbsp';
             }
             n += `<br> <br>`
